@@ -5,10 +5,10 @@ xmlns:gap="http://phonegap.com/ns/1.0"
 id="com.phonegap.app3"
 version="1.0.0">
 
-<name> app4 Contaminacion en mi comunidad</name>
+<name> app4 contaminacion en mi comunidad</name>
 
 <description>
-	Aplicación sobre la contaminacion en mi comunidad
+	Aplicacion sobre la contaminacion en mi comunidad
 </description>
 
 <author href="https://build.phonegap.com" email="bot.flnetwork@gmail.com">
