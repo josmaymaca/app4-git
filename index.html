@@ -20,9 +20,32 @@
 <link rel="stylesheet" type="text/css" href="engine1/style.css" />
 <script type="text/javascript" src="engine1/jquery.js"></script>
 <!-- End WOWSlider.com HEAD section -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body onLoad="MM_preloadImages('imagenes/salud2.jpg','imagenes/subsuelosustitucion.jpg','imagenes/reciclaje2.jpg')">
+<body onLoad="MM_preloadImages('imagenes/salud2.jpg','imagenes/subsuelosustitucion.jpg','imagenes/reciclaje2.jpg','imagenes/reciclar1.jpg')">
 <div data-role="page" id="Principal" data-theme="a">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
 	<h1>LA CONTAMINACION</h1>
@@ -73,7 +96,9 @@
     </div>
     </div>
     
-    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    
+    
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
     <h1>DEFINICIÓN DE LA CONTAMINACIÓN</h1>
     </div>
@@ -102,7 +127,7 @@ La contaminación puede darse exclusivamente en el suelo, el aire o el agua, aun
     </div>
     </div>
     
-    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
     <h1>TIPOS DE CONTAMINACIÓN</h1>
     </div>
@@ -157,7 +182,7 @@ La contaminación puede darse exclusivamente en el suelo, el aire o el agua, aun
  	<h2 style="color: #83E83B"><strong>3. Contaminación del suelo y del subsuelo</strong></h2>
     
     <p style="text-align: justify;">Provocada por la filtración de sustancias en el suelo, genera <strong>alteraciones físicas y químicas en éste que hacen que por ejemplo resulte inhabitable,</strong> se contaminen las aguas subterráneas o se imposibilite el crecimiento de vida en el área.</p>
-    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','imagenes/subsuelosustitucion.jpg',1)"><img src="imagenes/suelosustitucion.jpg" width="1280" height="720" id="Image38"></a> </div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image40','','imagenes/subsuelosustitucion.jpg',1)"><img src="imagenes/suelosustitucion.jpg" alt="" width="1280" height="720" id="Image40"></a> </div>
    </div>
    </div>
     
@@ -274,7 +299,7 @@ La contaminación puede darse exclusivamente en el suelo, el aire o el agua, aun
     
     
     
-    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
     <h1>CONSECUENCIAS</h1>
     </div>
@@ -341,7 +366,7 @@ Una de las consecuencias que más perjudican la salud
     </div>
     
     
-    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
     <h1>RECICLAJE</h1>
     </div>
@@ -361,9 +386,7 @@ Una de las consecuencias que más perjudican la salud
 
 <p style="text-align: justify;">En estas plantas, se almacenan y compactan grandes cantidades de residuos, para su posterior transporte en grandes cantidades hacia las plantas de reciclaje, llamadas plantas clasificadoras. Es aquí cuando se hace una separación exhaustiva de los residuos. En estas plantas, encontramos en algunos casos, las plantas de valoración, o reciclador final, donde se obtienen nuevas materias o productos, se almacenan los materiales en grandes vertederos, o bien se produce energía como es el caso de las plantas de biogas.</p>
 
-<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image39','','imagenes/reciclaje2.jpg',1)"><img src="imagenes/reciclar1.jpg" width="300" height="327" id="Image39"></a>
-
-<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Logan','','imagenes/reciclar1.jpg',1)"><img src="imagenes/reciclaje2.jpg" alt="" width="430" height="380" id="Logan"></a><br>
 <p style="color: #3C3;"><strong>ESTRATEGIA DE TRATAMIENTO DE RESIDUOS</strong></p>
 
 <p style="text-align: center;">El reciclaje, al margen de su complejo proceso de transformación, es uno de los puntos básicos de estrategia de tratamiento de residuos 3R.</p>
@@ -376,6 +399,8 @@ Una de las consecuencias que más perjudican la salud
 
 <h2 style="color:#3F0">Reciclar</h2>
 <p style="text-align: center;">El conjunto de operaciones de recogida y tratamiento de residuos que permiten reintroducirlos en un ciclo de vida</p>
+
+
 
 <br>
 <img src="imagenes/tira_comic.png" width="50%" height="50%">
@@ -394,7 +419,7 @@ Una de las consecuencias que más perjudican la salud
     
     
     
-    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
     <h1>MEDIDAS PARA COMBATIR LA CONTAMINACION EN MI COMUNIDAD</h1>
     </div>
@@ -430,7 +455,7 @@ Una de las consecuencias que más perjudican la salud
 	<li style="color:#3F0">Controlar los derrames accidentales de petróleo</li>
     <br>
     
-	<il style="color:#3F0">Reciclar objetos (darles un nuevo uso)</li>
+	<li style="color:#3F0">Reciclar objetos (darles un nuevo uso)</li>
     <br>
     
     <li style="color:#3F0">Tomar y generar conciencia de lo que está sucediendo</li>
@@ -460,5 +485,5 @@ Una de las consecuencias que más perjudican la salud
     </div>
     
     
-	</body>
+</body>
 </html>
